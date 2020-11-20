@@ -24,6 +24,13 @@
   @include respond(phone) {
     padding: 0rem $default-font-size;
   }
+  .hero-icon {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+  }
 
   .hero-title {
     font-size: 5.6rem;

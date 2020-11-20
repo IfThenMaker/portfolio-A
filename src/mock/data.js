@@ -13,6 +13,12 @@ export const heroData = {
   name: '',
   subtitle: '',
   cta: '',
+  icon: '',
+  alt: '',
+  // title: ' の紹介ページへようこそ',
+  // name: 'いっち',
+  // subtitle: '',
+  // cta: '',
 };
 
 // ABOUT DATA
@@ -21,7 +27,7 @@ export const aboutData = {
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: '', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -87,6 +93,12 @@ export const footerData = {
     },
   ],
 };
+
+export const youTubeData = {
+  videoId: 'j9ca15xzfbs',
+  id: nanoid(),
+};
+
 
 // Github start/fork buttons
 export const githubButtons = {
