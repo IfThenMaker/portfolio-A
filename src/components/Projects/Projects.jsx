@@ -8,6 +8,7 @@ import ProjectImg from '../Image/ProjectImg';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
+  const datas = projects.datas || [];
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -26,9 +27,9 @@ const Projects = () => {
     <section id="projects">
       <Container>
         <div className="project-wrapper">
-          <Title title="Projects" />
-          {projects.map((project) => {
-            const { title, info, info2, url, repo, img, id } = project;
+          <Title title={projects.projectsTitle || 'Projects'} />
+          {datas.map((project) => {
+            const { title, info, info2, cta, url, repo, img, id } = project;
 
             return (
               <Row key={id}>
@@ -55,7 +56,7 @@ const Projects = () => {
                         className="cta-btn cta-btn--hero"
                         href={url || '#!'}
                       >
-                        See Live
+                        {cta || 'See Live'}
                       </a>
 
                       {repo && (

@@ -20,7 +20,7 @@ import {
 function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState({});
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
   const [youtube, setYoutube] = useState({});
@@ -28,7 +28,7 @@ function App() {
   useEffect(() => {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
-    setProjects([...projectsData]);
+    setProjects({ ...projectsData });
     setContact({ ...contactData });
     setFooter({ ...footerData });
     setYoutube({ ...youTubeData });
@@ -46,9 +46,8 @@ function App() {
       }}
     >
       <Hero />
-      <YouTube />
-      <About />
       <Projects />
+      <About />
       <Contact />
       <Footer />
     </PortfolioProvider>

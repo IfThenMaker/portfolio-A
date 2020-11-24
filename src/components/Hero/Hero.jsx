@@ -29,10 +29,11 @@ const Header = () => {
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <IconImg alt={alt || 'icon-img'} filename={icon || 'icon.png'} />
           <h1 className="hero-title">
-            <span className="text-color-main">{name || 'Your Name'}</span>
-            {title || ' の紹介ページへようこそ'}
-            <br />
             {subtitle || ''}
+            <br />
+            <span className="text-color-main">{name || 'Your Name'}</span>
+            <br />
+            {title || " I'm the Unknown Developer"}
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">

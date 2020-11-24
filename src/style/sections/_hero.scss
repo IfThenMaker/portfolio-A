@@ -29,7 +29,12 @@
       height: 200px;
       border-radius: 100px;
       margin: 0 auto;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+
+      @include respond(phone) {
+        width: 150px;
+        height: 150px;
+      }
   }
 
   .hero-title {
