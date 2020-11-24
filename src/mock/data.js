@@ -28,8 +28,12 @@ export const heroData = {
 export const aboutData = {
   title: '自己紹介',
   img: 'dog.jpg',
-  paragraphOne: '僕は普段プログラミングと全く関係ない仕事をしています。プログラミングは趣味で２年ぐらいやってます。',
-  paragraphTwo: `３年程前、メンタリストDaiGo氏のニコ動でIfThenPlanningを知りました。IfThenPlanningでPython(プログラミング)を身につけてから、学習のコツ、学習の楽しさを知りました。それからはReact.jsやGCP周りを学んでプロダクトを作っています。`,
+  paragraphOne:
+    '僕は普段プログラミングと全く関係ない仕事をしています。プログラミングは趣味で２年程やってます。',
+  paragraphTwo: `３年程前、メンタリストDaiGo氏のニコ動で
+    IfThenPlanningを知りました。IfThenPlanningでPython(プログラミング)
+    を身につけてから、学習のコツ、学習の楽しさを知りました。
+    その後React.jsやGCP周りを学んでプロダクトを作っています。`,
   paragraphThree: `IfThenPlanningと学ぶ事の楽しさを知った事は、
     人生が変わるぐらい素晴らしい出来事でした。僕の行動を通して
     IfThenの凄さや学ぶ事の楽しさを伝えられたらな、って思っています。
